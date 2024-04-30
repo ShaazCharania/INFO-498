@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "Music Origin Detector",
+    "version": "1.0",
+    "description": "Detects if music is composed by humans or AI.",
+    "permissions": ["activeTab", "storage"],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_icon": "icon.png"
+    },
+    "icons": {
+        "128": "icon.png"
+    }
+}
