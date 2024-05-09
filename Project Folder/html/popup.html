@@ -1,14 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music Analysis</title>
-    <link rel="stylesheet" href="/Project Folder/css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body>
-    <h1>Music Origin Detector</h1>
-    <input type="file" id="musicFileInput" accept="audio/*">
-    <button id="analyzeButton">Analyze Music</button>
-    <div id="result"></div>
+<body class="bg-light">
+    <div class="container">
+        <h1 class="mt-4">Music Origin Detector</h1>
+        <div class="custom-file mt-4">
+            <input type="file" class="custom-file-input" id="musicFileInput" accept="audio/*">
+            <label class="custom-file-label" for="musicFileInput">Choose music file</label>
+        </div>
+        <button id="analyzeButton" class="btn btn-primary mt-3">Analyze Music</button>
+        <div id="result" class="mt-4"></div>
+        <footer class="mt-5 text-muted">
+            <p>&copy; 2024 Audio Architects Department
+            </p>
+        </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="popup.js"></script>
 </body>
 </html>
